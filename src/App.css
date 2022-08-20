@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.img-logo {
+  width: 100px;
+  
+}
+
+.rs{
+  font-size: 28px;
+}
+
+.nav-bar{
+  background-color: #FFFF;
+}
+
+.pre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  color: #42446E;
+  font-weight: 700;
+}
+
+
+
+.foto {
+  border-radius: 50%;
+  
+ background-color: white;
+ 
+}
+
+.foto1 {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%);
+  padding: 8px;
+  
+} 
+
+/* Swicht modo dark */
+.switch {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  ;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+
+/* Button CV */
+.button {
+  --width: 150px;
+  --height: 45px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: calc(var(--tooltip-height) + 3px);
+  --button-color: #00C0FD;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  cursor: pointer;
+ }
+ 
+ .button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+ }
+ 
+ .button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 10px);
+ }
+ 
+ .button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+ }
+ 
+ .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+ }
+ 
+ .text {
+  top: 0
+ }
+ 
+ .text,.icon {
+  transition: top 0.5s;
+ }
+ 
+ .icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .button:hover {
+  background: #E70FAA;
+ }
+ 
+ .button:hover .text {
+  top: -100%;
+ }
+ 
+ .button:hover .icon {
+  top: 0;
+ }
+ 
+ .button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+ }
+ 
+ .button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+ }
+ 
+ .button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+ }
+ 
+.justify{
+  text-align: justify;
+}
+ 
+.f {
+  font-family: 'Poppins', sans-serif;
+}
+.fs-7{
+  font-size: 13px;
+  
+}
+.c{
+  color: #666666;
+}
+.t {
+  font-weight: 500;
+}
+
+.cdr {
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+}
+
+.mt{
+  margin-top: 90px;
+}
+
+.log-footer {
+  width: 97px;
+}
+
+.foto {
+  /* width: 250px; */
+  width: 300px;
+}
+
+.im {
+
+  transition: .6s;
+}
+
+
+
+.im:hover {
+
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.cur {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+   @media (max-width: 1199.98px) { 
+
+
+
+    }
+
+
+    @media (max-width: 991.98px) { 
+
+
+
+    }
+ 
+    @media (max-width: 767.98px) { 
+      .pre {
+       font-size: 38px;
+       line-height: 38px;
+      }
+
+   }
+
+
+    
+
+
+
+    @media (max-width: 434.98px) {
+
+     .pre {
+      font-size: 33px;
+      line-height: 33px;
+     }
+      
+      /* .pre {
+        font-size: 33px;
+        line-height: 33px;
+        text-align: center;
+      }
+      
+      .m1{
+        height: 500px;
+      }*/
+      .button{
+        display: block;
+        margin: auto;
+        
+      } 
+      
+      
+       }
+
+     

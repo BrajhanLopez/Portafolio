@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../img/blsDev.png'
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
             <Navbar className='nav-bar' collapseOnSelect expand="lg" bg="light" variant="light" fixed='top'>
                 <Container>
                    
-                    <Navbar.Brand href="#home"><img className='img-logo' src="./src/img/blsDev.png" alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#home"><img className='img-logo' src={logo} alt="logo" /></Navbar.Brand>
                     <Nav className='d-flex flex-row gap-4 d-lg-none'>
                         <Nav.Link href="https://github.com/BrajhanLopez"><i className="fa-brands fa-github rs"></i></Nav.Link>
                         <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/"><i className="fa-brands fa-linkedin rs"></i></Nav.Link>

@@ -1,6 +1,18 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import foto from '../img/foto.png'
+import html from '../img/html.png'
+import css from '../img/css.png'
+import js from '../img/js.png'
+import react from '../img/react.png'
+import redux from '../img/redux.png'
+import boot from '../img/bootstrap.png'
+import tail from '../img/tailwind.png'
+import sass from '../img/sass.png'
+import git from '../img/git.png'
+import github from '../img/github.png'
+import landinpage from '../img/Friendsgarden.jpg'
 
 const Main = () => {
     return (
@@ -34,7 +46,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 d-flex align-items-center justify-content-center p-4 p-sm-2 p-lg-5'>
                     <div className='foto1 '>
-                        <img className='foto img-fluid ' src="./src/img/foto.png" alt="" />
+                        <img className='foto img-fluid ' src={foto} alt="" />
                     </div>
                 </div>
             </div>
@@ -57,35 +69,35 @@ const Main = () => {
             <div className='row mt-md-5 mb-md-5'>
                 <div className='col-6 col-sm-4 col-lg-3  col-xxl-2 offset-xxl-1  d-flex justify-content-center mb-5'>
 
-                    <img className='tech img-fluid' src="./src/img/html.png" alt="" />
+                    <img className='tech img-fluid' src={html} alt="" />
 
 
 
                 </div>
                 <div className='col-6 col-sm-4  col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
-                    <img className='tech img-fluid' src="./src/img/css.png" alt="" />
+                    <img className='tech img-fluid' src={css} alt="" />
 
 
 
                 </div>
                 <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
-                    <img className='tech img-fluid' src="./src/img/js.png" alt="" />
+                    <img className='tech img-fluid' src={js} alt="" />
 
 
 
                 </div>
                 <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
-                    <img className='tech img-fluid' src="./src/img/react.png" alt="" />
+                    <img className='tech img-fluid' src={react} alt="" />
 
 
 
                 </div>
                 <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
-                    <img className='tech img-fluid' src="./src/img/redux.png" alt="" />
+                    <img className='tech img-fluid' src={redux} alt="" />
 
 
 
@@ -94,35 +106,35 @@ const Main = () => {
 
 
 
-                    <img className='tech img-fluid' src="./src/img/bootstrap.png" alt="" />
+                    <img className='tech img-fluid' src={boot} alt="" />
 
                 </div>
                 <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
 
 
-                    <img className='tech img-fluid' src="./src/img/tailwind.png" alt="" />
+                    <img className='tech img-fluid' src={tail} alt="" />
 
                 </div>
                 <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
 
 
-                    <img className='tech img-fluid' src="./src/img/sass.png" alt="" />
+                    <img className='tech img-fluid' src={sass} alt="" />
 
                 </div>
                 <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
 
 
-                    <img className='tech img-fluid' src="./src/img/git.png" alt="" />
+                    <img className='tech img-fluid' src={git} alt="" />
 
                 </div>
                 <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
 
 
 
-                    <img className='tech img-fluid' src="./src/img/github.png" alt="" />
+                    <img className='tech img-fluid' src={github} alt="" />
 
                 </div>
 
@@ -161,7 +173,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
                     <Card className='mb-5 cdr im'>
-                        <Card.Img className='' variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img className='' variant="top" src={landinpage}/>
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
@@ -179,7 +191,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
                     <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img variant="top" src={landinpage} />
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
@@ -197,7 +209,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
                     <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img variant="top" src={landinpage} />
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
@@ -215,7 +227,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
                     <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img variant="top" src={landinpage} />
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
@@ -233,7 +245,7 @@ const Main = () => {
                 </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
                     <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img variant="top" src={landinpage} />
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>

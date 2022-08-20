@@ -154,7 +154,7 @@ const Main = () => {
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
                     <Card className='mb-5 cdr im '>
                         <div className=''>
-                        <Card.Img className='' variant="top" src="./src/img/Friendsgarden.jpg" />
+                        <Card.Img className='' variant="top" src={landinpage} />
                         </div>
                         <Card.Body>
                             <Card.Title className='f t'>Sitio Web Educativo</Card.Title>

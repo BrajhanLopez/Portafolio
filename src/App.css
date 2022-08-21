@@ -229,10 +229,6 @@ input:checked + .slider:before {
   font-weight: 500;
 }
 
-.cdr {
-  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
-}
-
 .mt{
   margin-top: 90px;
 }
@@ -246,26 +242,40 @@ input:checked + .slider:before {
   width: 300px;
 }
 
-.im {
-
-  transition: .6s;
+.box-img {
+  object-fit: cover;
+  height: 100%; 
+  
 }
 
+
+
+.im {
+
+  transition: .8s;
+}
 
 
 .im:hover {
 
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.cur {
-  overflow: hidden;
+  transform: scale(1.02);
   cursor: pointer;
 }
 
 
 
+.lk:hover{
+text-decoration: underline !important;
+}
+
+.dark {
+  background-color: #303136;
+  color: white;
+}
+
+.dark h2 {
+  color: white;
+}
    @media (max-width: 1199.98px) { 
 
 

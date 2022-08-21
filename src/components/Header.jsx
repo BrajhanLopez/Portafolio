@@ -32,7 +32,7 @@ const Header = () => {
                         <Nav className='gap-2 d-none d-lg-flex'>
                             <Nav.Link href="https://github.com/BrajhanLopez"><i className="fa-brands fa-github rs"></i></Nav.Link>
                             <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/"><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
-                            <Nav.Link href="#deets"><i className="fa-brands fa-twitch rs"></i></Nav.Link>
+                            <Nav.Link href="https://www.twitch.tv/brajhan_xls"><i className="fa-brands fa-twitch rs"></i></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 

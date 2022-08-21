@@ -13,6 +13,10 @@ import sass from '../img/sass.png'
 import git from '../img/git.png'
 import github from '../img/github.png'
 import landinpage from '../img/Friendsgarden.jpg'
+import pokedex from '../img/pokedex.jpg'
+import clima from '../img/weather.jpg'
+import ecomerce from '../img/ecomerce.jpg'
+
 
 const Main = () => {
     return (
@@ -150,118 +154,90 @@ const Main = () => {
 
             </div>
 
-            <div className='row'>
+            <div className='row gy-3'>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
+                    <Card className=' h-100 im shadow'>
+                       
+                        <Card.Img className='box-img' variant="top" src={landinpage} />
+                        
+                        <Card.Body className='d-flex flex-column'>
+                            <Card.Title className='f t text-center'>Sitio Web Educativo</Card.Title>
+                            <Card.Text className='justify f c' style={{fontWeight: '300'}}>
+                                Página estática creada como landing page para promocionar una institución educativa.
+                            </Card.Text>
+                            <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
+                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
+                            </Card.Text>
+                            <div className='d-flex justify-content-around'>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://friendsgardens.netlify.app/"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://github.com/BrajhanLopez/school-Lopez"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
                 <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
-                    <Card className='mb-5 cdr im '>
-                        <div className=''>
-                        <Card.Img className='' variant="top" src={landinpage} />
-                        </div>
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
+                    <Card className='h-100 im shadow'>
+                        
+                        <Card.Img className='box-img' variant="top" src={clima} />
+                        
+                        <Card.Body className='d-flex flex-column'>
+                            <Card.Title className='f t text-center'>Sitio Web del Clima</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
+                                Página que nos muestra en tiempo real el clima de la cuidad donde nos esta visitando.
                             </Card.Text>
                             <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
+                               <b>Tech stack: </b> HTML, CSS, Bootstrap, JS, React.
                             </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="https://friendsgardens.netlify.app/"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link  style={{color: '#000000', textDecoration: 'none'}} href="https://github.com/BrajhanLopez/school-Lopez"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
+                            <div className='d-flex justify-content-around'>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://blsweatherapp.netlify.app/"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
+                            <Card.Link  className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://github.com/BrajhanLopez/appclimate"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
                             </div>
                         </Card.Body>
                     </Card>
                 </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
-                    <Card className='mb-5 cdr im'>
-                        <Card.Img className='' variant="top" src={landinpage}/>
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
+                    <Card className='h-100 im shadow'>
+                        
+                        <Card.Img className='box-img' variant="top" src={pokedex}/>
+                        
+                        <Card.Body className='d-flex flex-column'>
+                            <Card.Title className='f t text-center'>Sitio Web Pokedex</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
+                                Sitio web que nos muestra el funcionamiento de una pokedex real, utilizando la Api PokeApi.
                             </Card.Text>
                             <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
+                               <b>Tech stack: </b> HTML, CSS, JS, React.
                             </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
+                            <div className='d-flex justify-content-around'>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://pokemonpokeapi.netlify.app/"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://github.com/BrajhanLopez/Pokedexapp"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
                             </div>
                         </Card.Body>
                     </Card>
                 </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
-                    <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src={landinpage} />
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
+                
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
+                    <Card className='h-100 im shadow'>
+                        
+                        <Card.Img className='box-img' variant="top" src={ecomerce} />
+                       
+                        <Card.Body className='d-flex flex-column'>
+                            <Card.Title className='f t text-center'>E-Commerce</Card.Title>
                             <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
+                                Sitio web que nos muestra el funcionamiento de una tienda virtual realizando el proceso de compra.
                             </Card.Text>
                             <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
+                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, React, Redux.
                             </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
-                    <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src={landinpage} />
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
-                            <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
-                            </Card.Text>
-                            <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
-                            </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
-                    <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src={landinpage} />
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
-                            <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
-                            </Card.Text>
-                            <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
-                            </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
-                    <Card className='mb-5 cdr im'>
-                        <Card.Img variant="top" src={landinpage} />
-                        <Card.Body>
-                            <Card.Title className='f t'>Sitio Web Educativo</Card.Title>
-                            <Card.Text className='justify f c' style={{fontWeight: '300'}}>
-                                Página estática creada como landing page para promocionar una institución educativa.
-                            </Card.Text>
-                            <Card.Text className='f fs-7 justify' style={{color: '#42446E'}}>
-                               <b>Tech stack: </b> HTML, CSS, JS, Bootstrap, Sass.
-                            </Card.Text>
-                            <div className='text-center'>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
-                            <Card.Link style={{color: '#000000', textDecoration: 'none'}} href="#"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
+                            <div className='d-flex justify-content-around'>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://stupendous-biscochitos-1a9e93.netlify.app/"><i className="fa-solid fa-link"></i>  Live Preview</Card.Link>
+                            <Card.Link className='lk' style={{color: '#000000', textDecoration: 'none'}} href="https://stupendous-biscochitos-1a9e93.netlify.app/"><i className="fa-brands fa-github"></i>   View Code</Card.Link>
                             </div>
                         </Card.Body>
                     </Card>
                 </div>
                
+                
             </div>
 
 

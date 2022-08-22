@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 *{
   margin: 0;
@@ -108,9 +108,8 @@ input:checked + .slider:before {
 .button {
   --width: 150px;
   --height: 45px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: calc(var(--tooltip-height) + 3px);
+
+  
   --button-color: #00C0FD;
   --tooltip-color: #fff;
   width: var(--width);
@@ -126,7 +125,7 @@ input:checked + .slider:before {
  
  .button::before {
   position: absolute;
-  content: attr(data-tooltip);
+ 
   width: var(--tooltip-width);
   height: var(--tooltip-height);
   background-color: var(--tooltip-color);
@@ -230,7 +229,7 @@ input:checked + .slider:before {
 }
 
 .mt{
-  margin-top: 90px;
+  margin-top: 77.81px;
 }
 
 .log-footer {
@@ -256,6 +255,10 @@ input:checked + .slider:before {
 }
 
 
+footer {
+  background-color: #f7f3f3;
+}
+
 .im:hover {
 
   transform: scale(1.02);
@@ -268,6 +271,11 @@ input:checked + .slider:before {
 text-decoration: underline !important;
 }
 
+.tstyle{
+  list-style: none;
+  color: #42446E;
+}
+
 .dark {
   background-color: #303136;
   color: white;
@@ -276,6 +284,42 @@ text-decoration: underline !important;
 .dark h2 {
   color: white;
 }
+
+.dark i {
+  color: #A7A7A7;
+}
+
+.dark footer {
+  background-color: #212529;
+  
+}
+
+.dark li a {
+  color: #A7A7A7;
+}
+.dark li{
+  color: #A7A7A7;
+}
+
+.dark .card{
+background-color: #363636;
+
+}
+
+.dark .card-text{
+  color: white !important;
+  font-weight: 200 !important;
+}
+
+.dark .card-link{
+  color: white !important;
+}
+
+.contact{
+max-width: 900px !important;
+
+}
+
    @media (max-width: 1199.98px) { 
 
 

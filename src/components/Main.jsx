@@ -20,10 +20,26 @@ import ecomerce from '../img/ecomerce.jpg'
 
 const Main = () => {
     return (
-        <div className='container pt-3'>
-
+        <div className='container pt-3 pb-5'>
+            <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <br />
             <div className='row mb-2 mb-md-5'>
-                <div className='col-12 col-sm-6 d-flex align-items-center justify-content-center'>
+                <div className='col-12 col-sm-6 d-flex align-items-center justify-content-center' data-aos="fade-up"
+                    data-aos-duration="3000">
                     <div>
                         <h2 className='pre'>Hi 👋,</h2>
                         <h2 className='pre'>My name is</h2>
@@ -46,94 +62,121 @@ const Main = () => {
 
                     </div>
                 </div>
-                <div className='col-12 col-sm-6 d-flex align-items-center justify-content-center p-4 p-sm-2 p-lg-5'>
+                <div className='col-12 col-sm-6 d-flex align-items-center justify-content-center p-4 p-sm-2 p-lg-5' data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="3000">
                     <div className='foto1 '>
-                        <img className='foto img-fluid ' src={foto} alt=""  />
+                        <img className='foto img-fluid ' src={foto} alt="" />
                     </div>
                 </div>
                 <div id='tech'></div>
             </div>
 
-
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
             <div className='row'  >
-                <div className='col-12 mt-md-5'>
-                    <h2 className='pre text-center fs-1 mt-5' >My Tech Stack</h2>
+                <div className='col-12 mt-md-5' data-aos="fade-up"
+                    data-aos-duration="3000" >
+                    <h2 className='pre text-center fs-1 mt-5'  >My Tech Stack</h2>
                 </div>
 
             </div>
-            <div className='row'>
-                <div className='col-12'>
+            <div className='row' >
+                <div className='col-12' data-aos="fade-up"
+                    data-aos-duration="3000" >
                     <h4 className='text-center' style={{ color: '#666666', fontFamily: 'Poppins' }}> Technologies I’ve been working with recently</h4>
                 </div>
 
             </div>
 
-            <div className='row mt-md-5 mb-md-5'>
-                <div className='col-6 col-sm-4 col-lg-3  col-xxl-2 offset-xxl-1  d-flex justify-content-center mb-5'>
+            <div className='row mt-md-5 mb-md-5' >
+                <div className='col-6 col-sm-4 col-lg-3  col-xxl-2 offset-xxl-1  d-flex justify-content-center mb-5' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500">
 
                     <img className='tech img-fluid' src={html} alt="" />
 
 
 
                 </div>
-                <div className='col-6 col-sm-4  col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4  col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-up"
+     data-aos-duration="3000">
 
                     <img className='tech img-fluid' src={css} alt="" />
 
 
 
                 </div>
-                <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2500">
 
                     <img className='tech img-fluid' src={js} alt="" />
 
 
 
                 </div>
-                <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6  col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500">
 
                     <img className='tech img-fluid' src={react} alt="" />
 
 
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-up"
+     data-aos-duration="3000">
 
                     <img className='tech img-fluid' src={redux} alt="" />
 
 
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 offset-xxl-1 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 offset-xxl-1 d-flex justify-content-center mb-5' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2500">
 
 
 
                     <img className='tech img-fluid' src={boot} alt="" />
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-up"
+     data-aos-duration="3000">
 
 
 
                     <img className='tech img-fluid' src={tail} alt="" />
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500">
 
 
 
                     <img className='tech img-fluid' src={sass} alt="" />
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-up"
+     data-aos-duration="3000">
 
 
 
                     <img className='tech img-fluid' src={git} alt="" />
 
                 </div>
-                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5'>
+                <div className='col-6 col-sm-4 col-lg-3 col-xxl-2 d-flex justify-content-center mb-5' data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500">
 
 
 
@@ -142,19 +185,26 @@ const Main = () => {
                 </div>
                 <div id='project'></div>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
             <div className='row' id='project'>
                 <div className='col-12'>
-                    <h2 className='pre text-center fs-1 mt-5' >Projects</h2>
+                    <h2 className='pre text-center fs-1 mt-5' data-aos="fade-up"
+                    data-aos-duration="3000"  >Projects</h2>
                 </div>
                 <div className='col-12'>
-                    <h4 className='text-center mb-md-3' style={{ color: '#666666', fontFamily: 'Poppins' }}> Things I’ve built so far</h4>
+                    <h4 className='text-center mb-md-3'  style={{ color: '#666666', fontFamily: 'Poppins' }} data-aos="fade-up"
+                    data-aos-duration="3000" > Things I’ve built so far</h4>
                 </div>
 
 
             </div>
 
             <div className='row gy-3'>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4'>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4' data-aos="fade-up"
+                    data-aos-duration="3000" >
                     <Card className=' h-100 im shadow'>
 
                         <Card.Img className='box-img' variant="top" src={landinpage} />
@@ -174,7 +224,8 @@ const Main = () => {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4 ' data-aos="fade-up"
+                    data-aos-duration="3000" >
                     <Card className='h-100 im shadow'>
 
                         <Card.Img className='box-img' variant="top" src={clima} />
@@ -194,7 +245,8 @@ const Main = () => {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4 ' data-aos="fade-up"
+                    data-aos-duration="3000" >
                     <Card className='h-100 im shadow'>
 
                         <Card.Img className='box-img' variant="top" src={pokedex} />
@@ -215,7 +267,8 @@ const Main = () => {
                     </Card>
                 </div>
 
-                <div className='col-12 col-sm-6 col-md-6 col-lg-4 '>
+                <div className='col-12 col-sm-6 col-md-6 col-lg-4 ' data-aos="fade-up"
+                    data-aos-duration="3000" >
                     <Card className='h-100 im shadow'>
 
                         <Card.Img className='box-img' variant="top" src={ecomerce} />

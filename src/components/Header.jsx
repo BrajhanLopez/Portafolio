@@ -17,7 +17,7 @@ const Header = ({theme}) => {
             <Navbar className='nav-bar' collapseOnSelect  expand="lg" bg={theme?'dark':'light'} variant={theme?'dark':'light'} sticky='top' >
                 <Container>
                    
-                    <Navbar.Brand href="#home"><img className='img-logo' src={logo} alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#home"><img className='img-logo'  src={logo} alt="logo" /></Navbar.Brand>
                     <Nav className='d-flex flex-row gap-4 d-lg-none'>
                         <Nav.Link href="https://github.com/BrajhanLopez"><i className="fa-brands fa-github rs"></i></Nav.Link>
                         <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/"><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
@@ -30,13 +30,13 @@ const Header = ({theme}) => {
                             {/* <Nav.Link href="#">About</Nav.Link> */}
                             <Nav.Link href="#tech">Tech Stack</Nav.Link>
                             <Nav.Link href="#project">Projects</Nav.Link>
-                            <Nav.Link href="#pricing">Contact</Nav.Link>
+                            <Nav.Link href="#contact">Contact</Nav.Link>
 
                         </Nav>
                         <Nav className='gap-2 d-none d-lg-flex' >
-                            <Nav.Link href="https://github.com/BrajhanLopez"><i className="fa-brands fa-github rs"></i></Nav.Link>
-                            <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/"><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
-                            <Nav.Link href="https://www.twitch.tv/brajhan_xls"><i className="fa-brands fa-twitch rs"></i></Nav.Link>
+                            <Nav.Link href="https://github.com/BrajhanLopez" target='_blank'><i className="fa-brands fa-github rs"></i></Nav.Link>
+                            <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/" target='_blank'><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
+                            <Nav.Link href="https://www.twitch.tv/brajhan_xls" target='_blank'><i className="fa-brands fa-youtube rs"></i></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 

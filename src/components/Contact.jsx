@@ -3,7 +3,8 @@ import React from 'react';
 const Contact = () => {
     return (
 
-<div className='container px-lg-5 contact mb-5'>
+<div className='container px-lg-5 contact mb-5' id='contact'  data-aos="zoom-out"
+                    data-aos-duration="3000" >
 
         <section className="mb-4">
 
@@ -88,6 +89,8 @@ const Contact = () => {
             </div>
 
         </section>
+        <br />
+        <br />
         <br />
         </div>
     );

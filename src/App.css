@@ -8,6 +8,10 @@
   font-family: 'DM Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .img-logo {
   width: 100px;
   
@@ -363,6 +367,8 @@ max-width: 900px !important;
   z-index: 0;
   
 }
+
+
 .circles li:hover {
   background-color: #b777a5;
   

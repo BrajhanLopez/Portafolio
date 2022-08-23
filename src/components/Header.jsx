@@ -26,11 +26,11 @@ const Header = ({theme}) => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto gap-2 text-center fs-5">
-                            <Nav.Link href="#home" onClick={()=>window.scrollTo( 0, 0 )}>Home</Nav.Link>
+                            <Nav.Link href="#home" onClick={()=>window.scrollTo( 0, 0 )}>Inicio</Nav.Link>
                             {/* <Nav.Link href="#">About</Nav.Link> */}
-                            <Nav.Link href="#tech">Tech Stack</Nav.Link>
-                            <Nav.Link href="#project">Projects</Nav.Link>
-                            <Nav.Link href="#contact">Contact</Nav.Link>
+                            <Nav.Link href="#tech">Mis Habilidades</Nav.Link>
+                            <Nav.Link href="#project">Proyectos</Nav.Link>
+                            <Nav.Link href="#contact">Contacto</Nav.Link>
 
                         </Nav>
                         <Nav className='gap-2 d-none d-lg-flex' >

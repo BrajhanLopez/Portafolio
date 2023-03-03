@@ -439,7 +439,7 @@ const Main = () => {
                   className="lk"
                   style={{ color: "#000000", textDecoration: "none" }}
                   target="_blank"
-                  href="https://brajhanlop.github.io/Ecommer_Basico/"
+                  href="https://buscastickers.vercel.app/"
                 >
                   <i className="fa-solid fa-link"></i> Live Preview
                 </Card.Link>

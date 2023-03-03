@@ -34,9 +34,9 @@ const Header = ({theme}) => {
 
                         </Nav>
                         <Nav className='gap-2 d-none d-lg-flex' >
-                            <Nav.Link href="https://github.com/BrajhanLopez" target='_blank'><i className="fa-brands fa-github rs"></i></Nav.Link>
-                            <Nav.Link href="https://www.linkedin.com/in/brajhan-lopez-suasnabar-5b2787194/" target='_blank'><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
-                            <Nav.Link href="https://www.twitch.tv/brajhan_xls" target='_blank'><i className="fa-brands fa-youtube rs"></i></Nav.Link>
+                            <Nav.Link href="https://github.com/BrajhanLop" target='_blank'><i className="fa-brands fa-github rs"></i></Nav.Link>
+                            <Nav.Link href="https://www.linkedin.com/in/brajhanlopez/" target='_blank'><i className="fa-brands fa-linkedin rs"></i></Nav.Link>
+                            <Nav.Link href="https://www.youtube.com/channel/UCZ6iBi9rLrDC6CbY77vnB2Q" target='_blank'><i className="fa-brands fa-youtube rs"></i></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 

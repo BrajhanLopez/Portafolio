@@ -1,6 +1,38 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_cumf9k7', 'template_lj1ox5c', form.current, 'yG8cKR77looZvhJEv')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        Swal.fire(
+            'Formulario enviado!',
+            'Gracias por contactarme, te responderé en breve',
+            'success'
+          )
+          e.target.user_name.value = ''
+          e.target.user_email.value = ''
+          e.target.subject.value = ''
+          e.target.message.value = ''
+
+          setTimeout(()=> {
+            window.location.reload()
+          }, 3000)
+          
+    };
+
     return (
 
 <div className='container px-lg-5 contact mb-5' id='contact'  data-aos="zoom-out"
@@ -17,7 +49,7 @@ const Contact = () => {
 
 
                 <div className="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" >
+                    <form id="contact-form" name="contact-form" ref={form} onSubmit={sendEmail} >
 
 
                         <div className="row">
@@ -25,14 +57,14 @@ const Contact = () => {
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="name" name="name" className="form-control"/>
-                                        <label htmlFor="name" className="">Nombre</label>
+                                    <input type="text" id="name" name="user_name" className="form-control"/>
+                                        <label htmlFor="name" className="" >Nombre</label>
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="md-form mb-0">
-                                    <input type="text" id="email" name="email" className="form-control"/>
+                                    <input type="text" id="email" name="user_email" className="form-control"/>
                                         <label htmlFor="email" className="">Email</label>
                                 </div>
                             </div>
@@ -55,19 +87,19 @@ const Contact = () => {
                             <div className="col-md-12">
 
                                 <div className="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+                                    <textarea type="text" id="message" rows="2" className="form-control md-textarea" name="message" ></textarea>
                                     <label htmlFor="message">Mensaje</label>
                                 </div>
 
                             </div>
                         </div>
 
+                    <div className="text-center text-md-left d-flex justify-content-end" >
+                        <button className="btn btn-primary" type="submit" style={{width:'150px', background:'#00C0FD'}}>Enviar</button >
+                    </div>
 
                     </form>
 
-                    <div className="text-center text-md-left d-flex justify-content-end" >
-                        <a className="btn btn-primary" style={{width:'150px', background:'#00C0FD'}}>Enviar</a>
-                    </div>
                     <div className="status"></div>
                 </div>
 

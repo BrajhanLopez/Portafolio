@@ -53,7 +53,7 @@ const Main = () => {
             <h2 className="pre">y soy desarrollador FrontEnd</h2>
 
             <a
-              href="https://drive.google.com/file/d/1iQkO0_PirQJ_7oM18AmxMK9Ybiz3o2jY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1hZXNL9RrSCWwnbRz__dY6yDxzWLTSK-z/view?usp=sharing"
               target="_blank"
             >
               <div className="button mt-3 mb-2">

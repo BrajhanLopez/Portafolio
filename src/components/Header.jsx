@@ -28,7 +28,7 @@ const Header = ({theme}) => {
                         <Nav className="m-auto gap-2 text-center fs-5">
                             <Nav.Link href="#home" onClick={()=>window.scrollTo( 0, 0 )}>Inicio</Nav.Link>
                             {/* <Nav.Link href="#">About</Nav.Link> */}
-                            <Nav.Link href="#tech">Mis Habilidades</Nav.Link>
+                            <Nav.Link href="#tech">Tecnologías</Nav.Link>
                             <Nav.Link href="#project">Proyectos</Nav.Link>
                             <Nav.Link href="#contact">Contacto</Nav.Link>
 

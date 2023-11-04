@@ -39,13 +39,14 @@ body {
 
 .foto {
   border-radius: 50%;
-  
- background-color: white;
+ 
+ background-color: #cbcbcb;
  
 }
 
 .foto1 {
   border-radius: 50%;
+ 
   background: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%);
   padding: 8px;
   

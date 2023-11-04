@@ -21,11 +21,11 @@ const Footer = () => {
                 <div className='col-12 col-md-6 pb-3'>
                    
                         <ul className="m-auto d-flex gap-4 justify-content-center  fs-6 tstyle " >
-                            <li className='pp' onClick={()=>window.scrollTo( 0, 0 )}> <a className='text-decoration-none tstyle' href="#home"> Home</a></li>
+                            <li className='pp' onClick={()=>window.scrollTo( 0, 0 )}> <a className='text-decoration-none tstyle' href="#home"> Inicio</a></li>
                             {/* <li href="#pricing">About</li> */}
-                            <li> <a href="#tech"  className='text-decoration-none tstyle'> Tech Stack </a></li>
-                            <li> <a href="#project"  className='text-decoration-none tstyle'> Projects</a></li>
-                            <li><a href="#contact" className='text-decoration-none tstyle'> Contact</a></li>
+                            <li> <a href="#tech"  className='text-decoration-none tstyle'> Tecnologías </a></li>
+                            <li> <a href="#project"  className='text-decoration-none tstyle'> Proyectos</a></li>
+                            <li><a href="#contact" className='text-decoration-none tstyle'> Contacto</a></li>
 
                         </ul>
                   
@@ -33,7 +33,7 @@ const Footer = () => {
 
                 <div className='col-12 col-md-6 '>
                     <ul className="m-auto d-flex gap-2 justify-content-center fs-6 tstyle " >
-                        <li>Designed and built by Bals 2022.</li>
+                        <li>Designed and built by Bals 2023.</li>
 
                     </ul>
 
